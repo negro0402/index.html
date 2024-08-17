@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - Pac-Man</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="pacman-wrapper">
+                <div class="pacman"></div>
+            </div>
+            <h1>Iniciar Sesión</h1>
+            
+            <form action="https://httpbin.org/post" method="POST">
+                <label for="login-username">Usuario:</label>
+                <input type="text" id="login-username" name="username" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+            <p><a href="index.html">Volver a la página principal</a></p>
+        </div>
+    </div>
+</body>
+</html>

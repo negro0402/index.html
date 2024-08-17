@@ -1,0 +1,79 @@
+body {
+    background-color: #d31919;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    text-align: center;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.pacman-container {
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+.pacman {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border-radius: 50%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    animation: pacman-animation 0.8s infinite;
+}
+
+@keyframes pacman-animation {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #f0c419;
+    color: #eff30c;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e0b419;
+}

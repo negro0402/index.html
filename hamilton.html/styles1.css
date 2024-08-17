@@ -1,0 +1,115 @@
+/* Reset básico para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-wrapper {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.pacman-wrapper {
+    position: relative;
+    margin: 0 auto 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.pacman {
+    width: 80px;
+    height: 80px;
+    background: #f7e04d;
+    border-radius: 50%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    animation: pacman-animation 0.8s infinite;
+}
+
+@keyframes pacman-animation {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 100%);
+    }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #222;
+    color: #f1f1f1;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f7e04d;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e5d20b;
+}
+
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #f7e04d;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

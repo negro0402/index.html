@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "api:dev",
+      "type": "npm",
+      "script": "dev",
+      "path": "api",
+      "problemMatcher": []
+    },
+    {
+      "label": "web:dev",
+      "type": "npm",
+      "script": "dev",
+      "path": "web",
+      "problemMatcher": []
+    },
+    {
+      "label": "dev:all",
+      "dependsOn": ["api:dev", "web:dev"],
+      "dependsOrder": "parallel"
+    }
+  ]
+}
+

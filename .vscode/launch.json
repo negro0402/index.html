@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "API: Dev (nodemon)",
+      "cwd": "${workspaceFolder}/api",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Web: Chrome",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/web"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Dev: API + Web",
+      "configurations": ["API: Dev (nodemon)", "Web: Chrome"],
+      "preLaunchTask": "dev:all",
+      "stopAll": true
+    }
+  ]
+}
+

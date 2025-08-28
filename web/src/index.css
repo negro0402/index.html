@@ -1,0 +1,4 @@
+:root { font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; }
+body { margin: 0; padding: 0 12px; color: #222; background: #f7f7f7; }
+a { color: #2563eb; }
+button { border-radius: 8px; border: 1px solid #ddd; padding: 8px 12px; background: white; }

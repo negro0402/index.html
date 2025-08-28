@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "ms-vscode.js-debug",
+    "ms-azuretools.vscode-docker"
+  ]
+}
+
